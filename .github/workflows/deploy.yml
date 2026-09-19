@@ -43,4 +43,5 @@ jobs:
           # aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
           aws-region: eu-north-1
           role-to-assume: arn:aws:iam::702682054392:role/my-astro-site-gha-deploy
+          
       - run: aws s3 sync dist/ s3://wendeeee-cicd-service/ --delete
